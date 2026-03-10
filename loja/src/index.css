@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #a3fcfc;
+    --secondary-color: #fcaca3;
+    --title: #4f5762;
+    --contrast: #003366;
+    --text-base: #2c3154;
+    --cta1: #fcfca3;
+    --cta2: #fca3fc;
+    --background: #002b58;
+    --text-color: #173f2c;
+    --gradient1: linear-gradient(#a3fcfc, #fcefa3, #fcaca3);
+    --gradient2: linear-gradient(#fcfca3, #a3c9fc, #fca3fc);
+    --font-base: "Roboto", sans-serif;
+    --font-title: "Edu NSW ACT Hand Cursive" serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    color: var(--text-color)
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
