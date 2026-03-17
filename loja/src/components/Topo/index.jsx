@@ -4,7 +4,9 @@ export default function topo() {
     return (
         <header>
             <div className='anuncio'>
-                <p>10x sem juros</p>
+                <div className='anuncio-conteudo'>
+                <p>TUDO em 10x SEM JUROS</p>
+                </div>
             </div>
 
             <div className='topo'>
