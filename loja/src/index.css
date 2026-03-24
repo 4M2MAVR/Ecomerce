@@ -69,6 +69,10 @@ img {
     white-space: nowrap;
 
 }
+.anuncio-conteudo {
+    /* display: inline-block; */
+    overflow: hidden;
+}
 
 .anuncio-conteudo p {
     /* display: inline-block; */
@@ -98,9 +102,46 @@ img {
 
 .topo picture {
     max-width: 100px;
+    transition: transform 0.65s ease
+}
+
+.topo picture:hover {
+     transition: transform 1s ease;
+     transform: rotate(360deg);
 }
 
 .topo nav {
     display: flex;
     gap: 20px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--contrast);
+    padding: 8px 12px;
+    transition: all 0.3 ease;
+    position: relative;
+
+    transition: color 0.45s ease;
+}
+
+.topo nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.topo nav a:hover::after {
+    width: 100%;
+}
+
+.topo nav a:hover {
+    color: var(--secondary-color);
 }
